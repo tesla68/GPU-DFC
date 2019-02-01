@@ -6,9 +6,6 @@ This repository contains Fast-GPU-PCC algorithm
 nvcc -rdc=true -lcusparse -lcusolver -lcublas -O2 -arch=compute_35 -code=sm_35 -std=c++11 -Xptxas="-dlcm=ca" CPU_side.cpp GPU_side_region.cu GPU_side_decomposition.cu GPU_side_sparse.cu -o out
 
 # Running
-There are 3 options for running the program:
-
-## No memory reduction 
 
 ./out N L W S 1
 
